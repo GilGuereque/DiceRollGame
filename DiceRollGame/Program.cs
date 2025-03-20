@@ -1,5 +1,4 @@
-﻿
-var diceNumbers = new RandonNumberGenerator();
+﻿var diceNumbers = new RandonNumberGenerator();
 
 //while (userGuess <> diceNumber && userTries <= 3)
 
