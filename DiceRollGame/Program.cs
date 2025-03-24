@@ -3,7 +3,7 @@ var DiceRollGuesser = new NumberGuesser();
 DiceRollGuesser.DiceRoll();
 
 // Pause game before exiting
-Console.WriteLine("Game over. Press enter to exit program.");
+Console.WriteLine("\nSorry, your three tries are up. Game over. Press enter to exit program.");
 Console.ReadKey();
 
 
@@ -25,15 +25,15 @@ class NumberGuesser
             if (userInt == ranNum)
             {
                 userTries++;
-                Console.WriteLine("You win.");
-                Console.WriteLine("Press enter to exit program.");
+                Console.WriteLine("\nYou win.");
+                Console.WriteLine("Press enter to exit game.");
                 Console.ReadKey();
                 return;
             }
             else if (userInt != ranNum)
             {
                 userTries++;
-                Console.WriteLine($"Wrong number. The dice roll was {ranNum}. Guess again:");
+                Console.WriteLine($"\nWrong number. The dice rolled was {ranNum}.");
                 //continue;
             }
 
