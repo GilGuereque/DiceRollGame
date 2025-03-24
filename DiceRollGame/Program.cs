@@ -1,6 +1,8 @@
 ﻿var diceNumbers = new RandonNumberGenerator();
 
 //while (userGuess<> diceNumber && userTries <= 3)
+var DiceRollGuesser = new NumberGuesser();
+DiceRollGuesser.DiceRoll();
 
 
 class NumberGuesser
@@ -11,7 +13,7 @@ class NumberGuesser
     public Random random = new Random();
 
     public int ranNum = 0;
-    public NumberGuesser()
+    public void DiceRoll()
     {
         while (userTries < 3)
         {
