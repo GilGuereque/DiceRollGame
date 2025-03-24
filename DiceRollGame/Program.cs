@@ -1,4 +1,4 @@
-﻿var diceNumbers = new RandonNumberGenerator();
+﻿//var diceNumbers = new RandonNumberGenerator();
 
 //while (userGuess<> diceNumber && userTries <= 3)
 var DiceRollGuesser = new NumberGuesser();
@@ -15,9 +15,9 @@ class NumberGuesser
     public int ranNum = 0;
     public void DiceRoll()
     {
-        while (userTries < 3)
+        while (userTries <= 3)
         {
-            Console.WriteLine("Dice rolled. Guess what number it shows in 3 tries.");
+            Console.WriteLine("Dice rolled. Guess what number it shows in 3 tries. (Number must be from 1 to 6).");
             bool v = int.TryParse(Console.ReadLine(), out int userInt);
             ranNum = random.Next(1, 6);
             if (userInt == ranNum)
